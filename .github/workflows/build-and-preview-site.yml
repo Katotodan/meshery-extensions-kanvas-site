@@ -25,9 +25,10 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: "20"
-      - name: Install PostCSS (required by Docsy)
+      - name: Install npm PostCSS
         run: |
-          npm install -g postcss postcss-cli autoprefixer
+          cd site
+          npm ci
       - name: Build site 🔧
         run: make site-build
       - name: Zip site output
