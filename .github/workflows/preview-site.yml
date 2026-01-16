@@ -8,7 +8,7 @@ on:
 
 jobs:
   deploy-preview:
-    if: github.repository == 'meshery/meshery'
+    if: github.repository == 'meshery-extensions/kanvas-site'
     runs-on: ubuntu-24.04
     steps:
       - name: Checkout code
@@ -24,7 +24,7 @@ jobs:
 
       - name: Unzip Site
         run: |
-          rm -rf ./docs/_site
+          rm -rf ./public
           unzip site-dir.zip
           rm -f site-dir.zip
 
@@ -32,7 +32,7 @@ jobs:
         id: netlify
         uses: nwtgck/actions-netlify@v1.1
         with:
-          publish-dir: 'docs/_site'
+          publish-dir: 'public'
           production-deploy: false
           github-token: ${{ secrets.GH_ACCESS_TOKEN }}
           enable-commit-comment: false
