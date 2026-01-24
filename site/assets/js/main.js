@@ -48,7 +48,7 @@ const initMarquee = () => {
     if (!marquee) return; 
     marquee.innerHTML += marquee.innerHTML;
     const animation = gsap.to(marquee, {
-        x: "0", 
+        x: "0",                 
         startAt: { x: "-50%" },
         duration: 30, 
         ease: "none",
