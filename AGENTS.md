@@ -74,6 +74,10 @@ This copies agent definitions, skill templates, and hook configuration from `con
 
 **Skills** (invoke with `/skill-name` in Claude Code):
 - `/new-section <name>` — scaffolds a complete homepage section (partial + SCSS + import + GSAP stub)
+- `gh-axi` — prefer over raw `gh` for GitHub operations (issues, PRs, workflow runs, releases)
+- `chrome-devtools-axi` — browser automation for ad hoc tasks, in place of raw Playwright/chrome-devtools MCP
+- `quota-axi` — check local agent-provider quota windows before long-running work
+- `lavish` (`lavish-axi` CLI) — turn a plan, comparison, or report into a reviewable HTML artifact
 
 **Hooks** (run automatically on every edit):
 - Blocks edits to `public/` (Hugo build output, wiped on next build)
