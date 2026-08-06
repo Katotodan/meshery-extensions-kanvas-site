@@ -9,6 +9,7 @@
 [![Slack](https://img.shields.io/badge/Slack-Join-brightgreen)](https://slack.meshery.io)
 [![Twitter](https://img.shields.io/twitter/follow/kanvas_new.svg?style=social)](https://x.com/intent/follow?screen_name=kanvas_new)
 [![GitHub](https://img.shields.io/github/stars/meshery-extensions/kanvas-site.svg?style=social&label=Star)](https://github.com/meshery-extensions/kanvas-site)
+[![support: community](https://img.shields.io/badge/support-community-00b39f)](https://github.com/meshery/meshery/blob/master/GOVERNANCE.md#extensions-githubcommeshery-extensions)
 
 This repository contains the website for the Meshery extension Kanvas - https://www.kanvas.new
 
